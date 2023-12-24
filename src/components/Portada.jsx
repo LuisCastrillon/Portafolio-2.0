@@ -13,7 +13,7 @@ export const Portada = (props) => {
                 <div className="cntLinksHeader">
                     <a href="#">Sobre mi</a>
                     <a href="#">Proyectos</a>
-                    <a href="#">Curriculum</a>
+                    
                 </div>
             </header>
             <div className="cntPortada">
@@ -21,9 +21,14 @@ export const Portada = (props) => {
                 <h2>{props.rol } <span className="red">{props.elemento}</span></h2>
                 <p>{props.descripcion}</p>
                 <div className="cntLinks">
-                    <a href="#"><img src={linkin} alt="" /></a>
-                    <a href="#"><img src={whatsapp} alt="" /></a>
-                    <a href="#"><img src={email} alt="" /></a>
+                    <div>
+                        <a href="#" id="cvLink">Descargar CV</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src={linkin} alt="" /></a>
+                        <a href="#"><img src={whatsapp} alt="" /></a>
+                        <a href="#"><img src={email} alt="" /></a>
+                    </div>
                 </div>
             </div>
         </section>

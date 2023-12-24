@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './css/App.css'
 import './css/normalize.css'
-import { Portada } from './components/portada'
+import { Portada } from './components/Portada'
 
 function App() {
   const [data, setData] = useState()
-  const dataInf = {
+  const infPortada = {
     titulo: "Luis Fdo. Castrillón",
     rol: "Analista y Desarrollador de Software",
     elemento:"</>",
@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <>
-      <Portada {...dataInf}/>
+      <Portada {...infPortada}/>
       
     </>
   )
