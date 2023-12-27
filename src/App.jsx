@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './css/App.css'
 import './css/normalize.css'
 import { Portada } from './components/Portada'
+import { Card } from './components/Card'
+
 
 function App() {
   const [data, setData] = useState()
@@ -14,7 +16,7 @@ function App() {
   return (
     <>
       <Portada {...infPortada}/>
-      
+      <Card/>
     </>
   )
 }
