@@ -1,16 +1,78 @@
-.container{
-
+:root{
+    --background: #211322;
+    --oneHundred:#f2d4fa;
+    --twoHundred: #ead5ff;
+    --threeHundred: #dab4fe;
+    --fiveHundred:#b15fd6;
+    --sixHundred:#9640b9;
+    --fourHundred:#d29eea;
+    --sixHundred: #8f20e9;
+    --nineHundred:#68226d;
 }
-.cardsCnt{
 
+
+.container{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+    .containerT{
+        margin: 0;
+        color: var(--oneHundred);
+        margin-bottom: 30px;
+    }
+.cardsCnt{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
 }
 .cardCnt{
-
+    margin: 15px 30px;
+    background-color: var(--threeHundred);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 }
 .imgCnt{
-
+    height: 250px;
+    background-color: var(--background);
 }
+    .imgCnt img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+    
 .infCnt{
-
-
+    /* background-color: antiquewhite; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px ;
+    align-items: center;
 }
+    .infCnt button{
+        padding: 10px;
+        width: 50%;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: var(--fiveHundred);
+        color: var(--oneHundred);
+        transition: .3s;
+        font-size: large;
+    }
+    .infCnt button:hover{
+        background-color: var(--sixHundred);
+    }
+
+    .infCnt h1{
+        margin:0;
+    }
