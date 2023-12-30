@@ -1,18 +1,19 @@
 :root{
-    --background: #211322;
-    --oneHundred:#f2d4fa;
-    --twoHundred: #ead5ff;
-    --threeHundred: #dab4fe;
-    --fiveHundred:#b15fd6;
-    --sixHundred:#9640b9;
-    --fourHundred:#d29eea;
-    --sixHundred: #8f20e9;
-    --nineHundred:#68226d;
+    --oneHundred:#e7e7e7;
+    --twoHundred: #d1d1d1;
+    --threeHundred: #b0b0b0;
+    --fourHundred: #888888;
+    --fiveHundred:#6d6d6d;
+    --sixHundred:#5d5d5d;
+    --sevenHundred:#4f4f4f;
+    --nineHundred:#3d3d3d;
+
+
 }
 
 
 .container{
-    background-color: var(--background);
+    background-color: var(--oneHundred);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,32 +21,40 @@
     
     .containerT{
         margin: 0;
-        color: var(--oneHundred);
-        margin-bottom: 30px;
+        /* color: var(--oneHundred); */
+        margin: 30px 0px;
+
     }
 .cardsCnt{
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: center;
+    grid-auto-flow: dense;
 }
 .cardCnt{
     margin: 15px 30px;
-    background-color: var(--threeHundred);
+    background-color: var(--twoHundred);
     min-height: 500px;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    /* box-shadow: 0px 0px 20px 8px var(--fourHundred); */
 }
 .imgCnt{
     height: 250px;
-    background-color: var(--background);
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.2);
+
+    border-radius: 10px;
+
 }
     .imgCnt img{
         object-fit: cover;
         height: 100%;
         width: 100%;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
 
     }
     
@@ -57,20 +66,30 @@
     justify-content: space-between;
     padding:20px ;
     align-items: center;
+    /* border-radius: 10px; */
+    /* border: 1px solid var(--twoHundred) */
+    
 }
+    .infCnt h1{
+        color: var(--nineHundred);
+    }
+    .infCnt p{
+        color: var(--sevenHundred);
+    }
     .infCnt button{
         padding: 10px;
         width: 50%;
         border: none;
         cursor: pointer;
         border-radius: 10px;
-        background-color: var(--fiveHundred);
-        color: var(--oneHundred);
+        background-color: var(--threeHundred);
+        color: var(--sevenHundred);
         transition: .3s;
         font-size: large;
     }
     .infCnt button:hover{
-        background-color: var(--sixHundred);
+        background-color: var(--fiveHundred);
+        color: var(--oneHundred);
     }
 
     .infCnt h1{

@@ -1,10 +1,14 @@
 :root{
-    --background: #211322;
-    --oneHundred:#f2d4fa;
-    --twoHundred: #ead5ff;
-    --threeHundred: #dab4fe;
-    --sixHundred: #8f20e9;
-    --nineHundred:#68226d;
+    --oneHundred:#e7e7e7;
+    --twoHundred: #d1d1d1;
+    --threeHundred: #b0b0b0;
+    --fourHundred: #888888;
+    --fiveHundred:#6d6d6d;
+    --sixHundred:#5d5d5d;
+    --sevenHundred:#4f4f4f;
+    --nineHundred:#3d3d3d;
+
+
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -18,8 +22,11 @@ body{
     min-height: 100vh;
     align-items: center;
     padding-left: 10rem;
-    background-color: var(--background);
-    color:#fff;
+    background-color: var(--oneHundred);
+    /* color:#fff; */
+    /* box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.6); */
+
+
 }
 
 .cntPortada{
@@ -33,15 +40,16 @@ body{
     .cntPortada h1{
         margin: 0;
         font-size:4rem;
-        color:var(--oneHundred)
+        color:#000;
     }
     .cntPortada h2{
         margin: 0;
+        color: var(--nineHundred)
     }
     .cntPortada p{
         font-size:18px;
         margin: 0;
-
+        color: var(--sevenHundred)
     }
 
 .cntLinks{
@@ -92,19 +100,19 @@ body{
 }
 .cntLinksHeader a{
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
     padding: 7px;
     border-radius: 5px;
     transition: .3s;
     font-size: 17px;
     margin-right: 20px;
-    background-color: var(--twoHundred);
+    /* background-color: var(--twoHundred); */
     color: #000;
 
 }
 .cntLinksHeader a:hover{
-    background-color: #fff;
-    color: var(--nineHundred);
+    /* background-color: #fff; */
+    /* color: var(--nineHundred); */
 
 }
 #cvLink{
@@ -116,17 +124,17 @@ body{
     padding: 7px;
     border-radius: 5px;
     font-weight: bolder;
-    color: #fff;
-    background-color: var(--threeHundred);
-    color: var(--sixHundred);
+    color: #000;
+    background-color: var(--twoHundred);
+    color: var(--nineHundred);
     /* box-shadow:
     0.3em 0.3em 1em rgba(0, 0, 0, 0.4); */
     /* border:1px solid var(--sixHundred) */
 }
 
 #cvLink:hover{
-    background-color: #7c2484;
+    /* background-color: #7c2484; */
     box-shadow:
-    0.3em 0.3em 1em #68226d;
-    color: var(--twoHundred);
+    2px 8px 10px var(--fiveHundred);
+    /* color: var(--twoHundred); */
 }
