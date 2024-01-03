@@ -36,7 +36,8 @@
 }
 .cardCnt{
     margin: 15px 30px;
-    background: linear-gradient(to bottom, var(--two), var(--three));
+    background: linear-gradient(to right, var(--two), var(--one));
+
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -79,11 +80,12 @@
     
 }
     .infCnt h1{
-        color: var(--one);
+        color: var(--three);
     }
     .infCnt p{
-        color: var(--two);
+        color: var(--three);
         /* font-weight:bold; */
+        font-size: 16.5px;
     }
     .infCnt button{
         padding: 10px;
@@ -91,15 +93,15 @@
         border: none;
         cursor: pointer;
         border-radius: 10px;
-        background-color: var(--two);
-        color: var(--three);
+        background-color: var(--three);
+        color: var(--one);
         transition: .3s;
         font-size: large;
         font-weight: 700;
     }
     .infCnt button:hover{
-        background-color: var(--one);
-        color: var(--oneHundred);
+        background-color: var(--two);
+        color: #fff;
     }
 
     .infCnt h1{

@@ -3,7 +3,7 @@ import yo from '../assets/img/yo1.jpg';
 
 export const AboutMe = () => {
     return (
-        <div className='aboutMeCnt'>
+        <div id='CmpAboutMe' className='aboutMeCnt'>
             <h1 className='aboutMeCntM'>
                 Un poco sobre mi
             </h1>

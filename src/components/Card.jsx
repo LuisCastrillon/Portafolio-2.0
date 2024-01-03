@@ -7,7 +7,7 @@ export const Card = () => {
     // const [cardData, setCardData] = useState();
     
     return(
-        <div className="container">
+        <div id="CmpProyects" className="container">
             <h1 className="containerT">Proyectos</h1>
             <div className="cardsCnt">
             

@@ -6,6 +6,7 @@ import { Card } from './components/Card'
 import { Skills } from './components/Skills'
 import { AboutMe } from './components/aboutme'
 import { Certificaciones } from './components/certificaciones'
+import { Footer } from './components/Footer'
 
 function App() {
   const [data, setData] = useState()
@@ -21,6 +22,7 @@ function App() {
       <Skills/>
       <AboutMe/>
       <Certificaciones/>
+      <Footer/>
     </>
   )
 }

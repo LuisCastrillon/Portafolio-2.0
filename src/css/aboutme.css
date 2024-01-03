@@ -27,7 +27,8 @@
     min-width: 350px;
     max-height: 350px;
     padding: 20px;
-    background-color: var(--two);
+    /* background-color: var(--two); */
+    background: linear-gradient(to right, var(--two), var(--one));
 
     margin-right:30px ;
     border-radius: 30px;
@@ -56,7 +57,8 @@
     padding: 20px;
     font-size:large;
     color: var(--oneHundred);
-    background-color: var(--two);
+    background: linear-gradient(to right, var(--two), var(--one));
+
     /* font-weight: bold; */
     border-radius: 30px;
     flex-grow: 1;
@@ -77,7 +79,8 @@
     padding: 20px;
     font-size:large;
     color: var(--twoHundred);
-    background-color: var(--two);
+    background: linear-gradient(to right, var(--two), var(--one));
+
     border-radius: 30px;
     margin: 0;
 }

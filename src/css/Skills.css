@@ -26,7 +26,8 @@
 .skillsCnt{
     max-width: 50rem;
     /* height: 500px; */
-    background: linear-gradient(to bottom, var(--two), var(--three));
+    background: linear-gradient(to right, var(--two), var(--one));
+
     padding: 10px;
     border-radius: 12px;
     display: grid;
@@ -35,7 +36,8 @@
 }
 
 .skillCnt{
-    background-color:#b6bbc488;
+    background: linear-gradient(to right, var(--two), var(--three));
+
     /* height: 30px; */
     padding: 10px;
     border-radius: 10px;

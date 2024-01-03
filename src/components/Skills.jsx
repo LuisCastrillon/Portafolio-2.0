@@ -3,7 +3,7 @@ import '../css/Skills.css';
 
 export const Skills = () => {
     return(
-        <div className="skillsCmpCnt">
+        <div id="CmpSkills" className="skillsCmpCnt">
             <h1>Tecnologias</h1>
             <div className="skillsCnt">
             {skillsData.map((element, index) => (
