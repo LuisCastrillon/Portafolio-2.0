@@ -7,21 +7,23 @@
     --sixHundred:#5d5d5d;
     --sevenHundred:#4f4f4f;
     --nineHundred:#3d3d3d;
-
+    --one:#161A30;
+    --two:#31304D;
+    --three:#B6BBC4;
 
 }
 
 
 .container{
-    background-color: var(--oneHundred);
+    background-color: var(--one);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
     
     .containerT{
-        margin: 0;
-        /* color: var(--oneHundred); */
+        /* margin: 0; */
+        color: var(--three);
         margin: 30px 0px;
 
     }
@@ -34,7 +36,7 @@
 }
 .cardCnt{
     margin: 15px 30px;
-    background-color: var(--twoHundred);
+    background: linear-gradient(to bottom, var(--two), var(--three));
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -42,11 +44,12 @@
     padding: 20px;
     max-width: 500px;
     /* box-shadow: 0px 0px 20px 8px var(--fourHundred); */
+    
 }
 .imgCnt{
     height: 250px;
     box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.2);
-
+    background-color: #000;
     border-radius: 10px;
 
 }
@@ -55,6 +58,11 @@
         height: 100%;
         width: 100%;
         border-radius: 10px;
+        transition: .3s;
+    }
+    .imgCnt img:hover{
+        cursor: pointer;
+        opacity: .8;
 
     }
     
@@ -71,10 +79,11 @@
     
 }
     .infCnt h1{
-        color: var(--nineHundred);
+        color: var(--one);
     }
     .infCnt p{
-        color: var(--sevenHundred);
+        color: var(--two);
+        /* font-weight:bold; */
     }
     .infCnt button{
         padding: 10px;
@@ -82,13 +91,14 @@
         border: none;
         cursor: pointer;
         border-radius: 10px;
-        background-color: var(--threeHundred);
-        color: var(--sevenHundred);
+        background-color: var(--two);
+        color: var(--three);
         transition: .3s;
         font-size: large;
+        font-weight: 700;
     }
     .infCnt button:hover{
-        background-color: var(--fiveHundred);
+        background-color: var(--one);
         color: var(--oneHundred);
     }
 

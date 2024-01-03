@@ -7,7 +7,9 @@
     --sixHundred:#5d5d5d;
     --sevenHundred:#4f4f4f;
     --nineHundred:#3d3d3d;
-
+    --one:#161A30;
+    --two:#31304D;
+    --three:#B6BBC4;
 
 }
 body{
@@ -21,11 +23,11 @@ body{
     display: flex;
     min-height: 100vh;
     align-items: center;
-    padding-left: 10rem;
-    background-color: var(--oneHundred);
+    /* padding-left: 10rem; */
+    background-color: var(--one);
     /* color:#fff; */
     /* box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.6); */
-
+    justify-content: space-evenly;
 
 }
 
@@ -33,23 +35,28 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    width: 45%;
     min-height: 60vh;    
     
 }
     .cntPortada h1{
         margin: 0;
         font-size:4rem;
-        color:#000;
+        color:var(--oneHundred);
+        /* color: var(--green); */
     }
     .cntPortada h2{
         margin: 0;
-        color: var(--nineHundred)
+        color: var(--three)
+    }
+    .cntPortada h2::after{
+        content: "</>";
+        color: #7E30E1;
     }
     .cntPortada p{
         font-size:18px;
         margin: 0;
-        color: var(--sevenHundred)
+        color: var(--three)
     }
 
 .cntLinks{
@@ -80,10 +87,6 @@ body{
 }
 
 
-.red{
-    color: #de85ed;
-}
-
 .header{
     display: flex;
     position: absolute;
@@ -91,8 +94,12 @@ body{
     left: 0;
     width: 100%;
     height: 10vh;
-    flex-direction: row-reverse;
+    justify-content: space-around;
 }
+    .header a{
+        text-decoration: none;
+        color: var(--three);
+    }
 .cntLinksHeader{
     display: flex;
     justify-content: space-around;
@@ -106,13 +113,14 @@ body{
     transition: .3s;
     font-size: 17px;
     margin-right: 20px;
-    /* background-color: var(--twoHundred); */
-    color: #000;
+    background-color: var(--two);
+    color: #fff;
+    font-weight:900;
 
 }
 .cntLinksHeader a:hover{
-    /* background-color: #fff; */
-    /* color: var(--nineHundred); */
+    background-color: var(--three);
+    color: #000;
 
 }
 #cvLink{
@@ -125,16 +133,41 @@ body{
     border-radius: 5px;
     font-weight: bolder;
     color: #000;
-    background-color: var(--twoHundred);
-    color: var(--nineHundred);
+    background-color: var(--two);
+    color: #fff;
     /* box-shadow:
     0.3em 0.3em 1em rgba(0, 0, 0, 0.4); */
     /* border:1px solid var(--sixHundred) */
 }
 
 #cvLink:hover{
-    /* background-color: #7c2484; */
+    background-color: var(--three);
     box-shadow:
-    2px 8px 10px var(--fiveHundred);
-    /* color: var(--twoHundred); */
+    0px 8px 20px .5px #7E30E1;
+    color: #000;
 }
+
+
+.pictureCnt{
+    height: 300px;
+    border-radius:10%;
+    width: 300px;
+    /* border:1px solid var(--fiveHundred); */
+    box-shadow:
+    0px 0px 30px 20px var(--two);
+    /* transition: .3; */
+}
+/* .pictureCnt:hover{
+    box-shadow:
+    0px 0px 30px 5px var(--three);
+
+} */
+
+    .pictureCnt img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10%;
+
+    }
+    

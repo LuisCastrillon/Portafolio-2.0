@@ -1,0 +1,49 @@
+:root{
+    --oneHundred:#e7e7e7;
+    --twoHundred: #d1d1d1;
+    --threeHundred: #b0b0b0;
+    --fourHundred: #888888;
+    --fiveHundred:#6d6d6d;
+    --sixHundred:#5d5d5d;
+    --sevenHundred:#4f4f4f;
+    --nineHundred:#3d3d3d;
+    --one:#161A30;
+    --two:#31304D;
+    --three:#B6BBC4;
+
+}
+
+.skillsCmpCnt{
+    background-color: var(--one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .skillsCmpCnt h1{
+        margin:50px 0px;
+        color:var(--three);
+    }
+.skillsCnt{
+    max-width: 50rem;
+    /* height: 500px; */
+    background: linear-gradient(to bottom, var(--two), var(--three));
+    padding: 10px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+
+.skillCnt{
+    background-color:#b6bbc488;
+    /* height: 30px; */
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid var(--two); */
+}
+    .skillCnt img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }

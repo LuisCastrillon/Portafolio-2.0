@@ -4,21 +4,23 @@ import facebook from  '../assets/icon/facebook.png';
 import linkin from  '../assets/icon/linkin.png';
 import email from  '../assets/icon/email.png';
 import whatsapp from  '../assets/icon/whatsapp.png';
+import luis from '../assets/img/yo.jpg';
 
 export const Portada = (props) => {
 
     return(
         <section className="seccionPortada">
             <header className="header">
+                <a href=""><h2>LUIS CASTRILLON</h2></a>
                 <div className="cntLinksHeader">
                     <a href="#">Sobre mi</a>
-                    <a href="#">Proyectos</a>
+                    <a href="#">Proyectos</a> 
                     
                 </div>
             </header>
             <div className="cntPortada">
                 <h1>{props.titulo}</h1>
-                <h2>{props.rol } <span className="red">{props.elemento}</span></h2>
+                <h2>{props.rol}</h2>
                 <p>{props.descripcion}</p>
                 <div className="cntLinks">
                     <div>
@@ -30,6 +32,9 @@ export const Portada = (props) => {
                         <a href="#"><img src={email} alt="" /></a>
                     </div>
                 </div>
+            </div>
+            <div className="pictureCnt">
+                <img src={luis ? luis : <p>... </p>} alt="" />
             </div>
         </section>
     )
