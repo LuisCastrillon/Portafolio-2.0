@@ -23,7 +23,7 @@ export const Certificaciones = () => {
             <h1 className='certiTitle'>Certificaciones</h1>
             <div className='gridCnt'>
                 {certificacionesData.map((element, index) => (
-                    <div onClick={() => {certificado(index)}} className={"d" + index} key={index}>
+                    <div className={"d" + index} key={index}>
                         <img src={element} alt="" />
                     </div>
                 ))}

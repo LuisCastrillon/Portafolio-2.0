@@ -11,7 +11,7 @@ export const Portada = (props) => {
     const [active, setActive] = useState(false)
     const open = (prop) => {
         switch(prop){
-        case "cv":  window.open('/src/assets/pdf/LuisCastrillon.pdf', '_blank'); 
+        case "cv":  window.open('./assets/pdf/LuisCastrillon.pdf', '_blank'); 
         case "wpp":  window.open('https://wa.me/3052169307', '_blank'); 
         case "in":  window.open('https://www.linkedin.com/in/luis-castrillon-60065423a', '_blank'); 
         case "email":  window.open('mailto:tutukastrillon@gmail.com', '_blank'); 
