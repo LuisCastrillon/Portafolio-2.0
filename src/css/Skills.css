@@ -15,7 +15,7 @@
 
 .skillsCmpCnt{
     background-color: var(--one);
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
 }
@@ -48,4 +48,21 @@
         height: 100%;
         object-fit: cover;
         border-radius: 7px;
+    }
+
+    @media only screen and (max-width: 767px){
+        .skillsCnt{
+           grid-template-columns: auto auto auto;
+        } 
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .skillsCnt{
+            grid-template-columns: auto auto auto auto;
+        } 
+      }
+    
+    @media only screen and (min-width: 1200px) {
+        .skillsCnt{
+            grid-template-columns:  auto auto auto auto auto;
+        } 
     }

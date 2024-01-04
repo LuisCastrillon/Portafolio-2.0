@@ -2,7 +2,7 @@
     --oneHundred:#e7e7e7;
     --twoHundred: #d1d1d1;
     --threeHundred: #b0b0b0;
-    --fourHundred: #888888;
+    --fourHundred: #888888; 
     --fiveHundred:#6d6d6d;
     --sixHundred:#5d5d5d;
     --sevenHundred:#4f4f4f;
@@ -18,7 +18,6 @@ body{
 
 *{
     scroll-behavior: smooth;
-
 }
 
 
@@ -69,6 +68,7 @@ body{
 
 .cntLinks div{
     display: flex;
+    align-items: center;
 }
 
 .cntLinks a {
@@ -177,4 +177,116 @@ body{
         border-radius: 10%;
 
     }
+
+    
+
+@media only screen and (max-width: 767px) {
+    #inactive{
+        display: none;
+    }
+    #active{
+        display: flex;
+    }
+    .cntLinksHeader{
+        background-color: #5d5d5d;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        flex-direction: column;
+        height: 100vh;
+        width: 250px;
+        /* display: none; */
+    }
+    
+    .cntLinksHeader a{
+        background-color: transparent;
+
+    }
+    .hamburguerMenu{
+        /* background-color: #802626; */
+        display: flex;
+        position: absolute;
+        top: 0px;
+        height: 70px;
+        width: 70px;
+        right: 0px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .hamburguerMenu span{
+        background-color: rgb(255, 248, 248);
+        width: 40px;
+        height: 3px;
+        /* margin-bottom: 10px; */
+        
+    }
+    .hamburguerMenu1{
+        /* background-color: #802626; */
+        display: flex;
+        position: absolute;
+        top: 0px;
+        height: 70px;
+        width: 70px;
+        right: 0px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+    }
+    .hamburguerMenu1 span{
+        background-color: rgb(255, 248, 248);
+        width: 40px;
+        height: 3px;
+        /* margin-bottom: 10px; */
+        
+    }
+    .hamburguerMenu1 span:nth-child(1) {
+        transform: rotate(-45deg) translate(1px, 6px);
+      }
+      
+      .hamburguerMenu1 span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburguerMenu1 span:nth-child(3) {
+        transform: rotate(45deg) translate(2px, -6px);
+      }
+    
+
+    .seccionPortada{
+        flex-direction: column-reverse;
+    }
+    .pictureCnt{
+        display: none;
+    }
+    .cntPortada{
+        /* background-color: #4f4f4f; */
+        height: 80vh;
+        padding: 10vh 0vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .cntPortada h1, .cntPortada h2, .cntPortada p{
+        text-align: center;
+
+    }
+    .cntPortada h1{
+        font-size: 45px;
+    }
+    .cntPortada h2{
+        font-size: 20px;
+    }
+    .cntPortada p{
+        font-size: 16px;
+    }
+    .cntLinks a{
+        width: 1rem;
+        height: 1rem;
+    }
+    
+}
+      
     

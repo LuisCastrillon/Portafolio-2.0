@@ -10,7 +10,7 @@ export const Skills = () => {
                 <div className="skillCnt" key={index}>
                     <img src={element} alt={index} />
                 </div>
-            )) }
+            )) } 
             </div>
         </div>
     )

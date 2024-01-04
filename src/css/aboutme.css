@@ -84,3 +84,20 @@
     border-radius: 30px;
     margin: 0;
 }
+@media only screen and (max-width: 767px){
+    .conocemeCnt{
+        display: flex;
+        flex-direction: column;
+    }
+    .AMImgCnt{
+        height: 350px;
+        min-width: 80%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+     
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}

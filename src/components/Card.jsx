@@ -9,7 +9,7 @@ export const Card = () => {
     return(
         <div id="CmpProyects" className="container">
             <h1 className="containerT">Proyectos</h1>
-            <div className="cardsCnt">
+            <div className="cardsCnt"> 
             
             {cardData.map((element, index) => (
                     <div className="cardCnt" key={index}>

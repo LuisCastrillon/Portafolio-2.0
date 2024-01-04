@@ -5,8 +5,10 @@ import linkin from  '../assets/icon/linkin.png';
 import email from  '../assets/icon/email.png';
 import whatsapp from  '../assets/icon/whatsapp.png';
 import luis from '../assets/img/yo.jpg';
+import { useState } from "react";
 
 export const Portada = (props) => {
+    const [active, setActive] = useState(false)
     const open = (prop) => {
         switch(prop){
         case "cv":  window.open('/src/assets/pdf/LuisCastrillon.pdf', '_blank'); 
@@ -21,7 +23,21 @@ export const Portada = (props) => {
         <section className="seccionPortada">
             <header className="header">
                 <a href=""><h2>LUIS CASTRILLON</h2></a>
-                <div className="cntLinksHeader">
+                <div className="hamburguerMenu" id="" onClick={() => {
+                    setActive(true)
+                }}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <div className="cntLinksHeader" id={active === true? "active" : "inactive"}>
+                    <div className="hamburguerMenu1" onClick={() => {
+                        setActive(false)
+                    }}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <a href="#CmpProyects">Proyectos</a>
                     <a href="#CmpSkills">Habilidades</a> 
                     <a href="#CmpAboutMe">Sobre mi</a> 
