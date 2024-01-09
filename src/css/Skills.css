@@ -53,6 +53,7 @@
     @media only screen and (max-width: 767px){
         .skillsCnt{
            grid-template-columns: auto auto auto;
+           width: 80%;
         } 
     }
     @media only screen and (min-width: 768px) and (max-width: 1199px) {

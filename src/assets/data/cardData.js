@@ -1,6 +1,6 @@
 import barberia from '../img/barberia.jpeg';
 import weather from'../img/weatherApp.png';
-
+import todo from '../img/todo.png';
 import cSharp from '../img/cs.png'
 import js from '../img/js.png'
 import html from '../img/html-5.png'
@@ -35,7 +35,12 @@ export const cardData = [
     {
         img: weather,
         title: "Sistema sobre el clima",
-        description: "Un minisistema donde con la ayuda del consumo de una API de uso libre arroja diferentes datos meteorologicos sobre la ciudad de Estados Unidas elegida.",
+        description: "Un minisistema creada con el framework de desarrollo REACT, donde con la ayuda del consumo de una API de uso libre arroja diferentes datos meteorologicos sobre la ciudad de Estados Unidas elegida.",
+    },
+    {
+        img: todo,
+        title: "Check List",
+        description: "Página web creada con el framework de desarrollo React que permite registrar, eliminar y marcar como realizadas diferentes tareas con la ayuda del localhost.",
     }
 ];
 

@@ -24,7 +24,7 @@ export const Portada = (props) => {
             <header className="header">
                 <a href=""><h2>LUIS CASTRILLON</h2></a>
                 <div className="hamburguerMenu" id="" onClick={() => {
-                    setActive(true)
+                    setActive(!active)
                 }}>
                         <span></span>
                         <span></span>
@@ -32,16 +32,24 @@ export const Portada = (props) => {
                     </div>
                 <div className="cntLinksHeader" id={active === true? "active" : "inactive"}>
                     <div className="hamburguerMenu1" onClick={() => {
-                        setActive(false)
+                        setActive(!active)
                     }}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#CmpProyects">Proyectos</a>
-                    <a href="#CmpSkills">Habilidades</a> 
-                    <a href="#CmpAboutMe">Sobre mi</a> 
-                    <a href="#CmpCerti">Certificaciones</a> 
+                    <a onClick={() => {
+                        setActive(false)
+                    }} href="#CmpProyects">Proyectos</a>
+                    <a onClick={() => {
+                        setActive(false)
+                    }} href="#CmpSkills">Habilidades</a> 
+                    <a onClick={() => {
+                        setActive(false)
+                    }} href="#CmpAboutMe">Sobre mi</a> 
+                    <a onClick={() => {
+                        setActive(false)
+                    }} href="#CmpCerti">Certificaciones</a> 
                     
                 </div>
             </header>
