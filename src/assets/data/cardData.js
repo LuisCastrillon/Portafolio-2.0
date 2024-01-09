@@ -1,6 +1,7 @@
 import barberia from '../img/barberia.jpeg';
 import weather from'../img/weatherApp.png';
 import todo from '../img/todo.png';
+import tech from '../img/tech.png';
 import cSharp from '../img/cs.png'
 import js from '../img/js.png'
 import html from '../img/html-5.png'
@@ -33,6 +34,11 @@ export const cardData = [
         description: "Un sitio web de barbería que brinda a los clientes información detallada sobre los servicios disponibles, los horarios de atención y la capacidad de reservar citas de forma conveniente.",
     },
     {
+        img: tech,
+        title: "Support Tech",
+        description: "Aplicación de escritorio desarrollada con el lenguaje de programación C# y SQL Server, cuya función principal es llevar el registro de los diferentes empleados, sus roles, los tickets y su respectivo seguimiento.",
+    },
+    {
         img: weather,
         title: "Sistema sobre el clima",
         description: "Un minisistema creada con el framework de desarrollo REACT, donde con la ayuda del consumo de una API de uso libre arroja diferentes datos meteorologicos sobre la ciudad de Estados Unidas elegida.",
@@ -41,7 +47,8 @@ export const cardData = [
         img: todo,
         title: "Check List",
         description: "Página web creada con el framework de desarrollo React que permite registrar, eliminar y marcar como realizadas diferentes tareas con la ayuda del localhost.",
-    }
+    },
+    
 ];
 
 export const skillsData = [html,css,js,react,node,cSharp,sqlServer,mysql,git,github]
